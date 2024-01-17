@@ -1,7 +1,7 @@
-import 'package:fast_app_base/common/constant/app_colors.dart';
+import 'package:carrot_clone/common/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
-export 'package:fast_app_base/common/constant/app_colors.dart';
+export 'package:carrot_clone/common/constant/app_colors.dart';
 
 typedef ColorProvider = Color Function();
 
@@ -45,4 +45,7 @@ abstract class AbstractThemeColors {
   Color get snackbarBgColor => AppColors.mediumBlue;
 
   Color get blueButtonBackground => AppColors.darkBlue;
+
+  Color get floatingActionLayer => const Color.fromARGB(255, 37, 37, 39);
+
 }

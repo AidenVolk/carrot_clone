@@ -1,4 +1,4 @@
-# fast_app_base
+# carrot_clone
 
 A new Flutter project.
 

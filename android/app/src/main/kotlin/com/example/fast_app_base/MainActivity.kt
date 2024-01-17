@@ -1,4 +1,4 @@
-package com.example.fast_app_base
+package com.example.carrot_clone
 
 import io.flutter.embedding.android.FlutterActivity
 

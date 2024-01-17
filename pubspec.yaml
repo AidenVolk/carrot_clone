@@ -1,4 +1,4 @@
-name: fast_app_base
+name: carrot_clone
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -73,6 +73,7 @@ dependencies:
   freezed: ^2.3.4
   freezed_annotation: ^2.2.0
   json_annotation: ^4.8.0
+  flutter_riverpod: ^2.4.9
 
 dev_dependencies:
   flutter_test:
@@ -110,6 +111,10 @@ flutter:
     - assets/image/icon/
     - assets/image/flag/
     - assets/image/darkmode/
+    - assets/image/fab/
+    - assets/image/home/
+    - assets/image/notification/
+    - assets/image/write/
     - assets/translations/
     - assets/
 
