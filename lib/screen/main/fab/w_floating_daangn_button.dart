@@ -2,12 +2,15 @@ import 'package:carrot_clone/common/common.dart';
 import 'package:carrot_clone/common/dart/extension/num_duration_extension.dart';
 import 'package:carrot_clone/common/widget/animated_height_collapse.dart';
 import 'package:carrot_clone/screen/main/fab/w_floating_daangn_button_riverpod.dart';
+import 'package:carrot_clone/screen/main/s_main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
 
 class FloatingDaangnButton extends ConsumerWidget {
+  static const double height = 100;
+
   FloatingDaangnButton({super.key});
 
   final duration = 300.ms;
@@ -63,7 +66,7 @@ class FloatingDaangnButton extends ConsumerWidget {
               ),
               Tap(
                 onTap: () { 
-                  ref.read(floatingButtonStateProvider.notifier).onTapButton();
+                  ref.read(floatingButtonStateProvider.notifier).toggleMenu();
                 },
                 child: AnimatedContainer(
                   height: 60,
@@ -93,10 +96,12 @@ class FloatingDaangnButton extends ConsumerWidget {
                     ],
                   ),
                 ),
+              ).pOnly(
+                bottom: 60 + context.viewPaddingBottom + 10,
               ),
             ],
           ),
-        ).pOnly(bottom: 110, right: 20),
+        ),
       ],
     );
   }
